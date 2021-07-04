@@ -4,11 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>InnovateMR Todo List Page</title>
+    <title>Todo List Page</title>
+
+    <style>
+
+        @font-face {
+        font-family:"Ms Comic";
+        src: url("COMIC.ttf") format("truetype");
+        }
+      </style>  
+
 </head>
 <body>
-    <table id="notestable" border="1" align="center" style="background-color:rgb(224, 248, 248); font-family: 'Comic Sans MS', cursive, sans-serif;">
-        <tr><td colspan="6" align="center"><a href="AddTask.html"><img src="icons/add.png" width="35px" height="35px" alt="Add Task" style="padding: 2px;margin: 2px;"></img></a></td></tr>
+    <table id="notestable" border="1" align="center" style="background-color:rgb(224, 248, 248); font-family: Ms Comic;">
+        <tr><td colspan="6" align="center"><a href="AddTask.html"><img src="add.png" width="35px" height="35px" alt="Add Task" style="padding: 2px;margin: 2px;"></img></a></td></tr>
             <th>Title</th>
             <th>Description</th>
             <th>End Date</th>
@@ -67,8 +76,8 @@ getData();
                 cell2.innerHTML = description;
                 cell3.innerHTML=enddate;
                 cell4.innerHTML=status;
-                cell5.innerHTML='<img src="icons/edit.png"  width="25px" height="25px" alt="Edit" style="padding: 2px;margin: 2px;"'+' id='+todo_number+'" onclick="edit_task('+todo_number+')"></img>';
-                cell6.innerHTML='<img src="icons/delete.png"   width="30px" height="30px" alt="Edit" style="padding: 2px;margin: 2px;"'+' id="'+todo_number+'" onclick="delete_task('+todo_number+')"></img>';
+                cell5.innerHTML='<img src="edit.png"  width="25px" height="25px" alt="Edit" style="padding: 2px;margin: 2px;"'+' id='+todo_number+'" onclick="edit_task('+todo_number+')"></img>';
+                cell6.innerHTML='<img src="delete.png"   width="30px" height="30px" alt="Edit" style="padding: 2px;margin: 2px;"'+' id="'+todo_number+'" onclick="delete_task('+todo_number+')"></img>';
         }
 
         function edit_task(todo_number)
