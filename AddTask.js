@@ -52,7 +52,7 @@ submitbtn.addEventListener("click",submit_data);
                 localStorage.setItem(key,json_data);
                 // alert(json_data);
                 // location.replace("ListPage.html");
-                location.href = "ListPage.html";
+                location.href = "index.html";
 
                     sessionStorage.clear();
               }
@@ -77,7 +77,7 @@ submitbtn.addEventListener("click",submit_data);
                     localStorage.setItem(key,json_data);
                     // alert(json_data);
                     // location.replace("ListPage.html");
-                    location.href = "ListPage.html";
+                    location.href = "index.html";
 
                 }             
         }
